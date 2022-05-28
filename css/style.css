@@ -12,6 +12,21 @@ body{
     background-color: black;
 }
 
+/* .carre{       div
+    background-color: #f0e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.carregando{    gif
+    height: 250px;
+    width: 250px;
+
+    border-radius: 50%;
+    object-fit : cover ;
+} */
 
 .topo{
     background-color: #fafafa;
@@ -29,30 +44,35 @@ body{
 }
 
 .lista{
-    background-color: rgb(94, 79, 79);
+    background-color: #e9e4e4;
     height: 90%;
     width: 100%;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
     
+    
 }
 
 .final{
-    background-color: rgb(49, 49, 46);
+    background-color: #FFFFFF;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     bottom: 0;
     height:20% ;
-
+    box-shadow: 0px 2px 6px 1px black  ;
 }
 
 input{
     height: 20px;
-    width: 60%;
+    width: 230px;
     margin-left: 13px;
+    border-radius: 25px;
+    object-fit: cover;
+    border: solid transparent;
+    box-shadow: 1px 1px 7px 1px black  ;
 }
 
 button{
@@ -69,22 +89,21 @@ button{
 
 
 .barrademensagem{
-    height: 30px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 10px 0px;
-    box-shadow: 1px 1px 7px 1px black  ;
-    margin-top: 7px;
+    margin-top: 17px;
 }
 
 .entrei{
-    background-color: gray;
+    background-color: #bdb8b8; 
 }
 
 
 .todos{
-    background-color: #f0e9e9;
+    background-color: #fff;
 }
 
 .private-message{
@@ -104,8 +123,10 @@ strong  {
 .enviar{
     cursor:pointer; 
     font-size: 33px ;
+    
 }
 .people{
+    
     font-size: 403%;
 }
 

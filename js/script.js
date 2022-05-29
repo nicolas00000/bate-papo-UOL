@@ -1,5 +1,5 @@
 let nome;
-perguntarnome()
+// perguntarnome()
 function perguntarnome(){
     nome = prompt("qual seu nome?")
     console.log(nome)
@@ -57,7 +57,7 @@ function renderizar(resposta){
                 <strong>para</strong>
                 <strong>${novo.to}</strong>
                
-                <h3>${novo.text}</h3>
+                <span class="mensagemtxt">${novo.text}</span >
              </li>`
         }
         else if(novo.to === nome || novo.from === nome || (novo.type === "private-message" && novo.to === "todos")  ){
@@ -67,7 +67,7 @@ function renderizar(resposta){
                <strong>${novo.from}</strong>
                <span>${novo.to}</span>
                <strong>somente </strong>
-               <h3>${novo.text}</h3>
+               <span class="mensagemtxt">${novo.text}</span >
             </li>`
         }
     }
@@ -111,11 +111,10 @@ function rolarchataofinal(){
     ultimamsg.scrollIntoView()
 }
 
+function abrirMenuParticipantes(){
+    const menu = document.querySelector(".togle")
+    const fundo = document.querySelector(".fundo-preto")
 
-//esta retornando um de cada deste aqui
-// /{
-// 	from: "nome do usuário",
-// 	to: "nome do destinatário (Todos se não for um específico)",
-// 	text: "mensagem digitada",
-// 	type: "message" // ou "private_message" para o bônus
-// }
+    menu.classList.toggle("escondido")
+    fundo.classList.toggle("escondido")
+}

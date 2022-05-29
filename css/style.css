@@ -2,6 +2,12 @@ body{
     background-color: gainsboro;
 }
 
+.title{
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -29,7 +35,7 @@ body{
 } */
 
 .topo{
-    background-color: #fafafa;
+    background-color: #fff;
     height: 100px;
     display: flex;
     align-items: center;
@@ -59,7 +65,7 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     bottom: 0;
     height:20% ;
     box-shadow: 0px 2px 6px 1px black  ;
@@ -94,7 +100,7 @@ button{
     align-items: center;
     justify-content: flex-start;
     padding: 10px 0px;
-    margin-top: 17px;
+    margin-bottom: 17px;
 }
 
 .entrei{
@@ -111,7 +117,8 @@ button{
 }
 
 strong,
-span{
+span,
+.mensagemtxt{
     margin-left: 33px;
 }
 
@@ -130,3 +137,40 @@ strong  {
     font-size: 403%;
 }
 
+h3{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.togle{
+    background-color: rgb(241, 74, 74);
+    height:100vh;
+    width: 259px;
+    position: absolute;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.fundo-preto{
+    background-color: rgba(0, 0, 0, 0.315);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.opcoes{
+    margin-top: 20px;
+}
+
+.escondido{
+    z-index: -1;
+}

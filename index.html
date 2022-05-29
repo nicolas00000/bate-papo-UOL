@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" class="title" style="width: 36px; height: 36px;" sizes="36x36">
     <link rel="stylesheet" href="css/resete.css">
     <link rel="stylesheet" href="css/style.css">
     <title>UOL</title>
@@ -11,19 +12,19 @@
 <body>
     <div class="container">
     <div class="topo">
-        <img src="img/batepapo.jpg" class="logo">
-        <ion-icon  class="people" name="contacts"></ion-icon>
+        <img src="img/download.png" class="logo">
+        <ion-icon  class="people" onclick="abrirMenuParticipantes()" name="contacts"></ion-icon>
     </div>
 
     <ul class="lista">
-
+<!-- 
         <li class="barrademensagem entrei"> 
             <span>(00:39)</span>
             <strong>fulano</strong>
             <span>entrou na sala</span>
         </li>
 
-        <li class="barrademensagem todos"> 
+        <li class="barrademensagem todos comSombra"> 
             <strong>fulano</strong>
             <span>para</span>
             <strong>todos:</strong>
@@ -35,8 +36,7 @@
             <span>especialmente para</span>
             <strong>fulana:</strong>
             <span>oioi</span>
-        </li>
-
+        </li> -->
 
     </ul>
 
@@ -46,10 +46,46 @@
         <input type="text" name="" id="" class="digitado" placeholder="digite aqui..."  SIZE = 40 e MAXLENGTH = 40>
         <button onclick="enviarmensagem()" > <ion-icon class="enviar" name="paper-plane"></ion-icon> </button>
     </div>
+
+
+    <!-- menu escondido -->
+
+    <div class="fundo-preto escondido" onclick="abrirMenuParticipantes()">
+        nada aqui
+    </div>
+
+
+    <div class="togle escondido">
+
+        <h1>escolha um contato para <br> enviar mensagem</h1>
+
+        <ul class="pessoasOnline">
+            
+            <li class="opcoes">TODOS</li>
+        
+            <li class="opcoes">joao</li>
+        
+            </ul>
+<br>
+            <h3>escolha a visibilidade</h3>
+            <ul class="visibilidade">
+
+                <li class="opcoes">publico</li>  <!--cadeado aberto-->
+                
+                <li class="opcoes">reservadamente</li>  <!--cadeado aberto-->
+            </ul>
+
+    </div>
+
+
+
+
 </div>
 </body>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
- 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
 <script src="js/script.js"></script>
 </html>

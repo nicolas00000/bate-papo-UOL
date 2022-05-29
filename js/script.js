@@ -12,10 +12,13 @@ function perguntarnome(){
       promessa.catch(nomeinvalido)
 }
 
+
+buscarmensagem()
 function buscarmensagem(){
     // tirar mensagem de carregamento
-    setInterval(carregarMSG_servidor, 2000)
+    setInterval(carregarMSG_servidor, 5000)
     setInterval(manterCONECTADO, 4000)
+    setInterval(participante, 6000)
 }
 
 function nomeinvalido(){
@@ -118,3 +121,24 @@ function abrirMenuParticipantes(){
     menu.classList.toggle("escondido")
     fundo.classList.toggle("escondido")
 }
+
+
+function participante(){
+    const promessa = axios.get("https://mock-api.bootcamp.respondeai.com.br/api/v2/uol/participants")
+    promessa.then(renderizarParticipantes)
+}
+
+function renderizarParticipantes(resposta){
+    const pessoa = resposta.data
+
+    const ulPessoasON = document.querySelector(".pessoasOnline")
+
+                    // garantir que sempre aparece a opcao "TODAS"
+    ulPessoasON.innerHTML = `   <li class="opcoes">  TODOS <span class="check"> v </span> </li>   `
+
+    for(let i = 0; i < pessoa.length; i++){
+    const participante = pessoa[i]
+
+    ulPessoasON.innerHTML += `  <li class="opcoes">  ${participante.name}  </li>  `
+    }
+}    //02:20

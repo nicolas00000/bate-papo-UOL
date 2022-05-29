@@ -174,3 +174,7 @@ h1{
 .escondido{
     z-index: -1;
 }
+
+.check{
+    color: green;
+}

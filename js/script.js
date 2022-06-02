@@ -1,5 +1,5 @@
 let nome;
-// perguntarnome()
+perguntarnome()
 function perguntarnome(){
     nome = prompt("qual seu nome?")
     console.log(nome)
@@ -122,7 +122,6 @@ function abrirMenuParticipantes(){
     fundo.classList.toggle("escondido")
 }
 
-
 function participante(){
     const promessa = axios.get("https://mock-api.bootcamp.respondeai.com.br/api/v2/uol/participants")
     promessa.then(renderizarParticipantes)
@@ -141,4 +140,4 @@ function renderizarParticipantes(resposta){
 
     ulPessoasON.innerHTML += `  <li class="opcoes">  ${participante.name}  </li>  `
     }
-}    //02:20
+}    //02:20 tentar fazer o check 

@@ -12,66 +12,44 @@
 <body>
     <div class="container">
     <div class="topo">
-        <img src="img/download.png" class="logo">
-        <ion-icon  class="people" onclick="abrirMenuParticipantes()" name="contacts"></ion-icon>
+        <img src="img/download.png" class="logo">    <!--onclick="abrirMenuParticipantes()"-->
+        <ion-icon  class="people"     name="contacts"></ion-icon>
     </div>
 
+
     <ul class="lista">
-<!-- 
-        <li class="barrademensagem entrei"> 
-            <span>(00:39)</span>
-            <strong>fulano</strong>
-            <span>entrou na sala</span>
-        </li>
-
-        <li class="barrademensagem todos comSombra"> 
-            <strong>fulano</strong>
-            <span>para</span>
-            <strong>todos:</strong>
-            <span>eae galera</span>
-        </li>
-
-        <li class="barrademensagem private-message"> 
-            <strong>fulano</strong>
-            <span>especialmente para</span>
-            <strong>fulana:</strong>
-            <span>oioi</span>
-        </li> -->
 
     </ul>
 
 
     <div class="final">
-
+        
+        <input type="checkbox" class="active" name="" id="">
         <input type="text" name="" id="" class="digitado" placeholder="digite aqui..."  SIZE = 40 e MAXLENGTH = 40>
         <button onclick="enviarmensagem()" > <ion-icon class="enviar" name="paper-plane"></ion-icon> </button>
     </div>
 
 
-    <!-- menu escondido -->
-
-    <div class="fundo-preto escondido" onclick="abrirMenuParticipantes()">
-        nada aqui
+    <!-- togle -->
+    <div class="fundo-preto escondido">     <!-- menu escondido onclick="abrirMenuParticipantes()"> --> 
     </div>
 
 
     <div class="togle escondido">
 
-        <h1>escolha um contato para <br> enviar mensagem</h1>
+            <h1>escolha um contato para <br> enviar mensagem</h1>
 
         <ul class="pessoasOnline">
-            
         
+        </ul>
         
-            </ul>
-<br>
+            <br>
             <h3>escolha a visibilidade</h3>
-            <ul class="visibilidade">
-
-                <li class="opcoes">publico</li>  <!--cadeado aberto-->
-                
-                <li class="opcoes">reservadamente</li>  <!--cadeado aberto-->
-            </ul>
+        
+        <ul class="visibilidade">
+            <li class="opcoes">publico</li>  <!--cadeado aberto-->
+            <li class="opcoes">reservadamente</li>  <!--cadeado aberto-->
+        </ul>
 
     </div>
 
@@ -85,5 +63,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+
+
+
+
 <script src="js/script.js"></script>
 </html>

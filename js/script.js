@@ -1,24 +1,41 @@
 let nome;
-perguntarnome()
-function perguntarnome(){
-    nome = prompt("qual seu nome?")
-    console.log(nome)
+const login =  document.querySelector(".container-login")
+// perguntarnome()
+
+function enviarMeuNome(){
+    const nomeDeEntrada =  document.querySelector(".nome").value
+    if(nomeDeEntrada != ""){ 
     const dados =  {
-        name: nome
-      }
+        name: nomeDeEntrada
+    }
+    nome = nomeDeEntrada
     const promessa = axios.post("https://mock-api.bootcamp.respondeai.com.br/api/v2/uol/participants", dados)
-    // colocar msg de carregamento
     promessa.then(buscarmensagem)
       promessa.catch(nomeinvalido)
+      login.classList.remove("escondido-login")
+    }
 }
+
+
+// function perguntarnome(){
+//     // nome = prompt("qual seu nome?")
+//     console.log(nome)
+//     const dados =  {
+//         name: nome
+//       }
+//     const promessa = axios.post("https://mock-api.bootcamp.respondeai.com.br/api/v2/uol/participants", dados)
+//     // colocar msg de carregamento
+//     promessa.then(buscarmensagem)
+//       promessa.catch(nomeinvalido)
+// }
 
 
 buscarmensagem()
 function buscarmensagem(){
     // tirar mensagem de carregamento
-    setInterval(carregarMSG_servidor, 5000)
-    setInterval(manterCONECTADO, 4000)
-    setInterval(participante, 6000)
+    setInterval(carregarMSG_servidor, 3000)
+    setInterval(manterCONECTADO, 6000)
+    // setInterval(participante, 6000)
 }
 
 function nomeinvalido(){

@@ -7,13 +7,31 @@
     <link rel="shortcut icon" href="img/logo.png" class="title" style="width: 36px; height: 36px;" sizes="36x36">
     <link rel="stylesheet" href="css/resete.css">
     <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/login.css">
     <title>UOL</title>
 </head>
 <body>
+
+    <div class="container-login escondido-login">
+
+        <div class="login">
+            
+                <img src="img/logo-login.jpg" class="loginpng" alt="">
+
+            
+            <input type="text" placeholder="Digite seu nome aqui" class="nome">
+            <br> 
+            <br>
+            <input type="submit" class="enviar" onclick="enviarMeuNome()">  </input> 
+        </div>
+
+
+    </div>
+
     <div class="container">
     <div class="topo">
-        <img src="img/download.png" class="logo">    <!--onclick="abrirMenuParticipantes()"-->
-        <ion-icon  class="people"     name="contacts"></ion-icon>
+        <img src="img/download.png" class="logo">  
+        <ion-icon  class="people"  name="contacts"></ion-icon>   <!--onclick="abrirMenuParticipantes()"-->
     </div>
 
 
@@ -23,15 +41,13 @@
 
 
     <div class="final">
-        
-        <input type="checkbox" class="active" name="" id="">
         <input type="text" name="" id="" class="digitado" placeholder="digite aqui..."  SIZE = 40 e MAXLENGTH = 40>
         <button onclick="enviarmensagem()" > <ion-icon class="enviar" name="paper-plane"></ion-icon> </button>
     </div>
 
 
     <!-- togle -->
-    <div class="fundo-preto escondido">     <!-- menu escondido onclick="abrirMenuParticipantes()"> --> 
+    <div class="fundo-preto escondido" >     <!-- menu escondido onclick="abrirMenuParticipantes()"> --> 
     </div>
 
 

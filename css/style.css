@@ -37,6 +37,7 @@ body{
 .topo{
     background-color: #fff;
     height: 100px;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,6 +64,7 @@ body{
 .final{
     background-color: #FFFFFF;
     width: 100%;
+    position: inherit;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -176,5 +178,14 @@ h1{
 }
 
 .check{
-    color: green;
+    color: rgb(54, 228, 54);
+}
+
+.active{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-style: none;
 }

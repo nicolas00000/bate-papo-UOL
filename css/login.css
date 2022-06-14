@@ -1,0 +1,69 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: #fafafa;
+}
+.escondido{
+    z-index: 2;
+}
+.container-login{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginpng{
+    width: 200px;
+    height: 122px;
+}
+
+.login{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: ; */
+}
+
+.nome{
+    width: 261px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    text-align: center;
+    margin-top:  50px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    
+}
+
+.enviar{
+    width: 109px;
+    height: 45px;
+    background: #E7E7E7;
+    border-radius: 9px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    color: #696969;
+}
+
+.enviar:hover{
+    color: gray;
+    background-color: #d6d3d3;
+}
